@@ -1,0 +1,24 @@
+.lower__container {
+  height: 40px;
+  /* background-color: teal; */
+  padding: 25px 30px;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.lower__container h1 {
+  font-size: 14px;
+  font-weight: 600;
+  color: teal;
+  letter-spacing: 1.5px;
+}
+
+@media (max-width: 768px) {
+  .lower__container h1 {
+    font-size: 12px;
+    font-weight: 300;
+    letter-spacing: 0;
+    margin-left: 20px;
+  }
+}

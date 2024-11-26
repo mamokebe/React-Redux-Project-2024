@@ -1,12 +1,12 @@
-import slider1 from "./images/slider1.webp";
+import slider1 from "./images/slider11.webp";
 import slider2 from "./images/slider2.png";
 import slider3 from "./images/slider3.png";
 import slider4 from "./images/slider4.png";
-import slider5 from "./images/slider5.webp";
-import slider6 from "./images/slider6.png";
+import slider5 from "./images/slider6.jpg";
+// import slider6 from "./images/slider6.png";
 //*************************************** */
-import category1 from "./images/category1.jpeg";
-import category2 from "./images/category2.jpeg";
+import category1 from "./images/category11.jpg";
+import category2 from "./images/category222.jpg";
 import category3 from "./images/category3.jpg";
 import category4 from "./images/category4.jpg";
 import category5 from "./images/category5.jpg";
@@ -92,39 +92,40 @@ export const sliderItems = [
     desc: "Best Sellers: Must-Have Wardrobe Pieces. Don't Miss Out!",
     bg: "fcf1ed",
   },
-  {
-    id: 6,
-    image: slider6,
-    title: "Summer Essentials",
-    desc: "Elevate Your Style with Our Latest Collection. Up to 50% Off Selected Items",
-    bg: "fbf0f4",
-  },
+  // {
+  //   id: 6,
+  //   image: slider6,
+  //   title: "Summer Essentials",
+  //   desc: "Elevate Your Style with Our Latest Collection. Up to 50% Off Selected Items",
+  //   bg: "fbf0f4",
+  // },
 ];
 //****************************************** */
-export const categories = [
+export const category = [
   {
     id: 1,
-    image: category1,
+    image: category5,
     title: "Home kits",
   },
   {
     id: 2,
-    image: category2,
-    title: "Clothes",
-  },
-  {
-    id: 3,
-    image: category3,
-    title: "Shoes",
-  },
-  {
-    id: 4,
     image: category4,
     title: "Sport kits",
   },
   {
+    id: 3,
+    image: category1,
+    title: "Clothes",
+  },
+  {
+    id: 4,
+    image: category3,
+    title: "Shoes",
+  },
+
+  {
     id: 5,
-    image: category5,
+    image: category2,
     title: "Jewelry",
   },
 ];
