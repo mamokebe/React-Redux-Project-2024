@@ -1,10 +1,12 @@
 import React from "react";
+import Products from "./Products";
+import { newArrivals } from "../../assets/products";
 
 const NewArrivals = () => {
   return (
-    <div>
-      <p>New Arrivals</p>
-    </div>
+    <>
+      <Products items={newArrivals} heading={"New Arrivals"} />
+    </>
   );
 };
 

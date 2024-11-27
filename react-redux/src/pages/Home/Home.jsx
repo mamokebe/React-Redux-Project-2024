@@ -2,7 +2,8 @@ import React from "react";
 import Header from "../../components/Header/Header";
 import Slider from "../../components/Slider/Slider";
 import Category from "../../components/Category/Category";
-// import LowerHeader from "../../components/LowerHeader/LowerHeader";
+import NewArrivals from "../../components/Products/NewArrivals";
+import BestSellers from "../../components/Products/BestSellers";
 
 const Home = () => {
   return (
@@ -10,6 +11,8 @@ const Home = () => {
       <Header />
       <Slider />
       <Category />
+      <NewArrivals />
+      <BestSellers />
     </>
   );
 };
