@@ -4,6 +4,8 @@ import Slider from "../../components/Slider/Slider";
 import Category from "../../components/Category/Category";
 import NewArrivals from "../../components/Products/NewArrivals";
 import BestSellers from "../../components/Products/BestSellers";
+import News from "../../components/News/News";
+import Footer from "../../components/Footer/Footer";
 
 const Home = () => {
   return (
@@ -13,6 +15,8 @@ const Home = () => {
       <Category />
       <NewArrivals />
       <BestSellers />
+      <News />
+      <Footer />
     </>
   );
 };

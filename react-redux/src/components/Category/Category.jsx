@@ -6,7 +6,7 @@ const Category = () => {
   return (
     <div className={classes.category__container}>
       {category.map((item) => (
-        <div className={classes.category__wrapper}>
+        <div key={item.id} className={classes.category__wrapper}>
           <img src={item.image} alt="" />
           <div className={classes.category__info}>
             <h1>{item.title}</h1>
