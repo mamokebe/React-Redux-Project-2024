@@ -1,7 +1,12 @@
+.top {
+  background-color: turquoise;
+  padding: 40px 20px;
+  margin: auto;
+}
 .footer__container {
   display: flex;
   flex-direction: row;
-  padding: 60px 20px;
+  padding-bottom: 10px;
 }
 
 .footer__left {
@@ -86,6 +91,10 @@
 
 .footer__right img {
   width: 50%;
+}
+.login_footer_copy {
+  text-align: center;
+  margin-top: 10px;
 }
 
 @media only screen and (max-width: 768px) {

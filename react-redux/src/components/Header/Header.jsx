@@ -3,6 +3,7 @@ import classes from "./Header.module.css";
 import { GoSearch } from "react-icons/go";
 import { LuShoppingCart } from "react-icons/lu";
 import LowerHeader from "../LowerHeader/LowerHeader";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -10,7 +11,9 @@ const Header = () => {
       <div className={classes.header__container}>
         <div className={classes.header__wrapper}>
           <div className={classes.header__left}>
-            <h1>ALL-IN-ALL</h1>
+            <Link to="/">
+              <h1>ALL-IN-ALL</h1>
+            </Link>
           </div>
 
           <div className={classes.header__middle}>
@@ -30,8 +33,12 @@ const Header = () => {
           </div>
 
           <div className={classes.header__right}>
-            <p className={classes.header__menu}>Register</p>
-            <p className={classes.header__menu}>Login</p>
+            <Link to="/register">
+              <p className={classes.header__menu}>Register</p>
+            </Link>
+            <Link to="/login">
+              <p className={classes.header__menu}>Login</p>
+            </Link>
             <div className={classes.header__menu}>
               <LuShoppingCart size={35} />
               <span className={classes.cart__badge}>0</span>
