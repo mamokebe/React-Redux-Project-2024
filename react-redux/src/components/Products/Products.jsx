@@ -3,8 +3,15 @@ import classes from "./Products.module.css";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiSearch } from "react-icons/ci";
 import { useNavigate } from "react-router-dom";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 const Products = ({ items, heading }) => {
+  const dispatch = useDispatch();
+  const addToCartHandling = (item) => {
+    dispatch(addToCart(item));
+  };
+
   const navigate = useNavigate();
   const handleViewDetails = (id) => {
     navigate(`/product/${id}`);
@@ -22,7 +29,10 @@ const Products = ({ items, heading }) => {
                 <span>{`$${item.priceCents / 100}`}</span>
               </div>
               <div className={classes.product__info}>
-                <button className={classes.icon}>
+                <button
+                  className={classes.icon}
+                  onClick={() => addToCartHandling(item)}
+                >
                   <CiShoppingCart />
                   Add to cart
                 </button>

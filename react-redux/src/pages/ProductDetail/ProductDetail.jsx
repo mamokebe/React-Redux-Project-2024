@@ -4,8 +4,14 @@ import Header from "../../components/Header/Header";
 import { useParams } from "react-router-dom";
 import { allProducts } from "../../assets/products";
 import Footer from "../../components/Footer/Footer";
+import { useDispatch } from "react-redux";
+import { addToCart } from "../../redux/cartSlice";
 
 const ProductDetail = () => {
+  const dispatch = useDispatch();
+  const addToCartHandling = (product) => {
+    dispatch(addToCart(product));
+  };
   const { id } = useParams();
   const product = allProducts?.find((product) => product.id === id);
 
@@ -77,7 +83,9 @@ const ProductDetail = () => {
             </div>
           </div>
           <div className={classes.addToCart}>
-            <button>Add to cart</button>
+            <button onClick={() => addToCartHandling(product)}>
+              Add to cart
+            </button>
           </div>
         </div>
       </div>

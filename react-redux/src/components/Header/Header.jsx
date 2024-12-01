@@ -4,8 +4,12 @@ import { GoSearch } from "react-icons/go";
 import { LuShoppingCart } from "react-icons/lu";
 import LowerHeader from "../LowerHeader/LowerHeader";
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  //updating the total number of cart display
+  const cartItems = useSelector((state) => state.cart.cartItems);
+  const totalItems = cartItems.length;
   return (
     <>
       <div className={classes.header__container}>
@@ -41,7 +45,14 @@ const Header = () => {
             </Link>
             <div className={classes.header__menu}>
               <LuShoppingCart size={35} />
-              <span className={classes.cart__badge}>0</span>
+              {/* {totalItems > 0 && (
+                <span className={classes.cart__badge}>{totalItems}</span>
+              )} */}
+              {totalItems ? (
+                <span className={classes.cart__badge}>{totalItems}</span>
+              ) : (
+                <span className={classes.cart__badge}>0</span>
+              )}
             </div>
           </div>
         </div>
