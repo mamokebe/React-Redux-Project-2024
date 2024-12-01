@@ -164,6 +164,7 @@
 
 @media screen and (max-width: 768px) {
   .product__wrapper {
+    flex-direction: column;
     width: 95%;
     height: auto;
   }

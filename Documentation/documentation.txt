@@ -1,0 +1,16 @@
+
+
+
+installing redux toolkit
+npm install @reduxjs/toolkit react-redux
+link:
+  https://redux.js.org/redux-toolkit/overview/
+  https://www.geeksforgeeks.org/redux-toolkit/
+create Redux folder in src folder
+  -cartSlice.js 
+    - to increase, decrease and remove item from cart
+  - store.js 
+    - to store items and update 
+
+  -add to cart onclick finction
+  -
