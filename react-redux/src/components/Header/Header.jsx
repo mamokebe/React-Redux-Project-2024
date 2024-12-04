@@ -43,17 +43,19 @@ const Header = () => {
             <Link to="/login">
               <p className={classes.header__menu}>Login</p>
             </Link>
-            <div className={classes.header__menu}>
-              <LuShoppingCart size={35} />
-              {/* {totalItems > 0 && (
+            <Link to="/cart">
+              <div className={classes.header__menu}>
+                <LuShoppingCart size={35} />
+                {/* {totalItems > 0 && (
                 <span className={classes.cart__badge}>{totalItems}</span>
               )} */}
-              {totalItems ? (
-                <span className={classes.cart__badge}>{totalItems}</span>
-              ) : (
-                <span className={classes.cart__badge}>0</span>
-              )}
-            </div>
+                {totalItems ? (
+                  <span className={classes.cart__badge}>{totalItems}</span>
+                ) : (
+                  <span className={classes.cart__badge}>0</span>
+                )}
+              </div>
+            </Link>
           </div>
         </div>
       </div>

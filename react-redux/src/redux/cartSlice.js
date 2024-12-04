@@ -13,10 +13,18 @@ const cartSlice = createSlice({
         (item) => item.id === action.payload.id
       );
       if (!existingItem) {
-        state.cartItems.push({ ...action.payload, quantity: 1 });
+        state.cartItems.push({
+          ...action.payload,
+          quantity: 1,
+          deliveryOptionId: 1,
+        });
         // console.log(quantity);
       } else {
-        state.cartItems.push({ ...action.payload, quantity: 1 });
+        state.cartItems.push({
+          ...action.payload,
+          quantity: 1,
+          deliveryOptionId: 1,
+        });
       }
     },
     removeFromCart: (state, action) => {
@@ -30,6 +38,7 @@ const cartSlice = createSlice({
       );
       if (itemIndex >= 0) {
         state.cartItems[itemIndex].quantity += 1;
+        state.cartItems[itemIndex].deliveryOptionId += 1;
       }
     },
     decreaseQuantity: (state, action) => {
